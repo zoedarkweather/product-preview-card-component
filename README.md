@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/zoedarkweather](https://github.com/zoedarkweather)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/zoedarkweather/product-preview-card-component](https://github.com/zoedarkweather/product-preview-card-component)
+- Live Site URL: [https://product-preview-card-component-taupe-gamma.vercel.app/](https://product-preview-card-component-taupe-gamma.vercel.app/)
 
 ## My process
 
