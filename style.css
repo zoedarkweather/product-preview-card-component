@@ -103,6 +103,7 @@ p {
     justify-content: center;
     font-family: var(--font-button);
     font-weight: var(--font-wt-button);
+    border: none;
     border-radius: 0.7rem;
     background-color: var(--dark-cyan);
     color: var(--white);
