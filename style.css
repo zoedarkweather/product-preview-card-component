@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+
+    --font-heading: "Fraunces", 'Times New Roman', Times, serif;
+    --font-body: "Monserrat", Arial, Helvetica, sans-serif;
+    --font-button: "Monserrat", Arial, Helvetica, sans-serif;
+    --font-wt-heading: 700;
+    --font-wt-body: 500;
+    --font-wt-button: 700;
+    --font-size-heading: 1.9rem;
+    
+    --card-padding: 1.5em;
+
+    /* ### Primary */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--font-wt-body);
+    background-color: var(--cream);
+    color: var(--dark-grayish-blue);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-weight: var(--font-wt-heading);
+    font-size: var(--font-size-heading);
+    color: var(--very-dark-blue);
+}
+
+p {
+    font-size: 14px;
+}
+
+.card {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    width: 90vw;
+    margin: 6rem auto;    
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: var(--white);   
+}
+
+.product-description {
+    display: grid;
+    align-content: start;
+    gap: 1rem;
+    padding: var(--card-padding);
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5rem;  
+}
+
+.sale-price {
+    font-family: var(--font-heading);
+    font-weight: var(--font-wt-heading);
+    font-size: var(--font-size-heading);
+    color: var(--dark-cyan);
+}
+
+.price {
+    text-decoration: line-through;
+}
+
+.icon {
+    width: 1rem;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-add-to-cart {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-button);
+    font-weight: var(--font-wt-button);
+    border-radius: 0.7rem;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px) {
+    .card {
+        max-width: 580px;     
+        grid-template-columns: 1fr 1fr;
+    }
+}
