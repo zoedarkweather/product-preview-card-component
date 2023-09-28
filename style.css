@@ -12,28 +12,27 @@ img {
 }
 
 :root {
-
+    /* fonts  */
     --font-heading: "Fraunces", 'Times New Roman', Times, serif;
-    --font-body: "Monserrat", Arial, Helvetica, sans-serif;
-    --font-button: "Monserrat", Arial, Helvetica, sans-serif;
+    --font-body: "Monserrat", Arial, Helvetica, sans-serif;   
     --font-wt-heading: 700;
     --font-wt-body: 500;
     --font-wt-button: 700;
-    --font-size-heading: 1.9rem;
-    
-    --card-padding: 1.5em;
-
-    /* ### Primary */
+ 
+    /* colors */
     --dark-cyan: hsl(158, 36%, 37%);
+    --btn-hover-color: hsl(158, 36%, 27%);
     --cream: hsl(30, 38%, 92%);
-
-    /* ### Neutral */
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-body);
     font-weight: var(--font-wt-body);
     background-color: var(--cream);
@@ -43,79 +42,101 @@ body {
 h1 {
     font-family: var(--font-heading);
     font-weight: var(--font-wt-heading);
-    font-size: var(--font-size-heading);
+    font-size: 1.9rem;
     color: var(--very-dark-blue);
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .card {
     display: grid;
-    align-content: start;
-    gap: 1rem;
-    width: 90vw;
-    margin: 6rem auto;    
-    border-radius: 0.5rem;
+    width: 90%;
+    margin: 0 auto;    
+    border-radius: 0.5em;
     overflow: hidden;
     background-color: var(--white);   
 }
 
 .product-description {
     display: grid;
-    align-content: start;
-    gap: 1rem;
-    padding: var(--card-padding);
+    gap: 1em;
+    padding: 1.5em;
 }
 
 .category {
+    margin-bottom: 1em;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
 }
 
 .description {
+    margin-bottom: 0.5em;
     font-size: 1rem;
-    line-height: 1.5rem;  
+    line-height: 1.5;  
 }
 
 .sale-price {
     font-family: var(--font-heading);
     font-weight: var(--font-wt-heading);
-    font-size: var(--font-size-heading);
+    font-size: 1.9rem;
     color: var(--dark-cyan);
 }
 
-.price {
-    text-decoration: line-through;
-}
-
-.icon {
-    width: 1rem;
-    text-align: center;
-    margin-right: 10px;
-}
-
 .btn-add-to-cart {
-    display: flex;
-    height: 3rem;
+    cursor: pointer;
+    height: 3.5em;
+    max-width: 300px;
+    padding-left: 1em;
+    display: flex; 
     align-items: center;
     justify-content: center;
-    font-family: var(--font-button);
+    font-family: inherit;
     font-weight: var(--font-wt-button);
+    font-size: 1rem;
     border: none;
-    border-radius: 0.7rem;
+    border-radius: 0.7em;
+    background-image: url("./images/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+    background-position: top 50% left 30%;
     background-color: var(--dark-cyan);
-    color: var(--white);
-    
+    color: var(--white);    
 }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.btn-add-to-cart:hover,
+.btn-add-to-cart:focus {
+    background-color: var(--btn-hover-color);
+}
 
-@media (min-width: 800px) {
+.attribution {
+    margin-top: 2em;
+    font-size: 11px;
+    text-align: center; 
+    color: var(--very-dark-blue);
+}
+
+.attribution a {
+    color: hsl(158, 36%, 27%); 
+}
+
+@media (min-width: 650px) {
     .card {
-        max-width: 580px;     
+        max-width: 700px;                
         grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .product-img {
+        height: 100%;
+    }
+
+    .product-description {       
+        align-self: center;
+    }
+
+    .btn-add-to-cart {
+        background-position: top 50% left 25%;
     }
 }

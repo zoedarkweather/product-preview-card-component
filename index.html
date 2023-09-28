@@ -8,32 +8,35 @@
     <title>Frontend Mentor | Product preview card component</title>
 </head>
 <body>   
-    <main> 
-        <div class="card">
-            <div class="product-img">
-                <picture>
-                    <source media="(min-width:800px)" srcset="images/image-product-desktop.jpg">
-                    <img src="images/image-product-mobile.jpg" alt="Photo of Chanel perfume bottle">
-                </picture>
+    <div class="wrapper">
+        <main>
+            <div class="card">
+                <div>
+                    <picture>
+                        <source media="(min-width:650px)" srcset="images/image-product-desktop.jpg">
+                        <img class="product-img"  src="images/image-product-mobile.jpg" alt="Square shaped glass perfume bottle with a gold cap, filled with amber-colored liquid and labeled 'Gabrielle Chanel'">
+                    </picture>
+                </div>
+                <div class="product-description">
+                    <hgroup>
+                        <p class="category">Perfume</p>
+                        <h1>Gabrielle Essence Eau De Parfum</h1>
+                    </hgroup>
+                    <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                    <div class="price-container">
+                        <p><span class="sale-price">$149.99 </span>
+                        <span class="price"><s>$169.99</s></span></p>
+                    </div>
+                    <button class="btn-add-to-cart">
+                        Add to Cart
+                    </button>
+                </div>
             </div>
-            <div class="product-description">
-                <p class="category">Perfume</p>
-                <h1>Gabrielle Essence Eau De Parfum</h1>
-                <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
-                <div class="price-container">
-                    <p><span class="sale-price">$149.99 </span>
-                    <span class="price">$169.99</span></p>
-                </div>             
-                <button class="btn-add-to-cart">
-                    <img class="icon" src="images/icon-cart.svg" alt="shopping cart icon">
-                    Add to Cart
-                </button>            
-            </div>
-        </div>   
-    </main>
-    <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/zoedarkweather">Your Name Here</a>.
-    </footer>
+        </main>
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/zoedarkweather">Jennifer Souza</a>.
+        </footer>
+    </div>
 </body>
 </html>
