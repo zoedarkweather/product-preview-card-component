@@ -1,6 +1,6 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
 
 ## Overview
 
@@ -48,9 +47,10 @@ Users should be able to:
 
 I learned that you can use display flex to vertically align button text.
 
-9/28 updates:
+9/28 updates:  
+
 - Made some changes to the spacing and vertically centered the component on the page to better match design.
-- Changed the strikethrough on the price from css to html so it can be correctly read by screenreaders. 
+- Changed the strikethrough on the price from css to html so it can be correctly read by screenreaders.
 - Changed the button icon to a background image to improve accessibility of the button.
 - Added the hover/focus state to the button which I'd forgotten to do
 - Edited the product image alt tag to be more descriptive.
